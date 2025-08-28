@@ -15,11 +15,14 @@ local fonts = {
 }
 
 function love.load()
-    
+    love.mouse.setVisible(false)
+    _G.mouse_x , _G.mouse_y = 0,0
 end
 
 
 function love.update(dt)
+    mouse_x , mouse_y = love.mouse.getPosition()
+    print(mouse_x,mouse_y)
     
 end
 
